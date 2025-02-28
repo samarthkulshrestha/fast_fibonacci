@@ -1,7 +1,7 @@
 # fast fibonacci
 
-A fast fibonacci numbers algorithm using Lucas sequence identities. This algorithm
-can calculate upto the 25th millionth fibonacci number in ~1sec.
+A fast Fibonacci numbers algorithm using Lucas sequence identities. This algorithm
+can calculate upto the 25th millionth Fibonacci number in ~1sec.
 
 ## introduction
 
@@ -13,3 +13,9 @@ These identities are the basis for the algorithm:
 + $`\displaystyle L_{2n}=L_{n}^{2}-2(-1)^{n}`$
 + $`\displaystyle 2F_{n+1}=F_{n}+L_{n}`$
 + $`\displaystyle 2L_{n+1}=5F_{n}+L_{n}`$
+
+### explanation
+
+Any Fibonacci number $`F_{n}`$ can be calculated if the previous Fibonacci
+and Lucas numbers $`F_{n-1}`$ and $`L_{n-1}`$ are known or if the middle
+Fibonacci and Lucas numbers $`F_{n/2}`$ and $`L_{n/2}`$ exist.
